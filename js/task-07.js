@@ -21,6 +21,4 @@ function setfontSizeRange() {
     console.log(fontSizeControl.value);
 
     text.style.fontSize = `${fontSizeControl.value}px`
-    fontSizeControl.getAttribute('min')
-    fontSizeControl.getAttribute('max')
 }

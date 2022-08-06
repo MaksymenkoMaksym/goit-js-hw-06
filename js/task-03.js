@@ -37,35 +37,15 @@ const images = [
 ];
 */
 
-// const galleryBlock = document.querySelector('.gallery');
 
-// const galleryItems = images.map(({ url, alt }) => {
-//   const galleryItem = document.createElement('img');
-//   galleryItem.classList.add('gallery__item')
-//   galleryItem.setAttribute('src', url)
-//   galleryItem.setAttribute('alt', alt)
-//   return galleryItem
-// })
-
-
-// console.log(galleryBlock);
-// console.log(...galleryItems);
-
-// console.log(galleryItems);
-// galleryBlock.append(...galleryItems)
-
-// galleryBlock.insertAdjacentHTML("afterbegin", galleryItems.join(""));
 
 const galleryBlock = document.querySelector('.gallery');
-// обернути в лі
+
 const galleryItems = images.map(({ url, alt }) => {
   const galleryItem2 = `<li><img class = "gallery__item" src = ${url} alt = ${alt}}></li>`
   return galleryItem2
 })
 
-
-
-console.log(galleryItems);
 
 galleryBlock.insertAdjacentHTML("afterbegin", galleryItems.join(""));
 /*
@@ -77,3 +57,21 @@ elem.setAttribute(name, value) - встановлює атрибут.
 elem.removeAttribute(name) - видаляє атрибут.
 elem.attributes - властивість, що повертає об'єкт усіх атрибутів елемента.
 */
+
+
+// const galleryBlock = document.querySelector('.gallery');
+
+// const galleryItems = images.map(({ url, alt }) => {
+//   const galleryItem = document.createElement('img');
+//   galleryItem.classList.add('gallery__item')
+//   galleryItem.setAttribute('src', url)
+//   galleryItem.setAttribute('alt', alt)
+//   return galleryItem
+// })
+
+// console.log(...galleryItems);
+
+// console.log(galleryItems);
+// galleryBlock.append(...galleryItems)
+
+// galleryBlock.insertAdjacentHTML("afterbegin", galleryItems.join(""));

@@ -32,5 +32,3 @@ incrementBtn.addEventListener("click", () => {
     value += 1;
     counterValue.textContent = `${value}`;
 });
-
-console.log(counterValue.textContent);

@@ -55,7 +55,7 @@ function createBoxes(amount) {
   let quantityBoxes = '';
   for (let i = 0; i < amount; i++) {
     let hexColor = getRandomHexColor();
-    quantityBoxes += `<div style="background-color:${hexColor}; width:${30 + (i * 10)}px; height: ${30 + (i * 10)}px">${hexColor}</div>`;
+    quantityBoxes += `<div style="background-color:${hexColor}; width:${30 + (i * 10)}px; height: ${30 + (i * 10)}px; font-size: ${5 + (i * 2)}px";>${hexColor}</div>`;
   }
 
   boxes.innerHTML = quantityBoxes;
@@ -63,4 +63,5 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxes.innerHTML = ''
+  inputNumber.value = ''
 }

@@ -41,10 +41,6 @@ const addMarckUp =
     return ingredientsItem;
   });
 
-
-
-console.log(...addMarckUp);
-
 ingredientsBlock.append(...addMarckUp)
 
 /*

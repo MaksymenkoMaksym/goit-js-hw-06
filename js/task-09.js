@@ -25,13 +25,9 @@ const colorDescription = document.querySelector('.color');
 button.addEventListener('click', changeBackground)
 
 function changeBackground(value) {
-
-  console.log(value);
   let colorHex = getRandomHexColor();
 
   document.querySelector('body').style.backgroundColor = colorHex;
   colorDescription.textContent = colorHex;
 
 }
-
-console.log(colorDescription);
